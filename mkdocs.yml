@@ -22,5 +22,4 @@ theme:
         name: Zu Light Mode wechseln
 
 plugins:
-   - panzoom
    - glightbox
