@@ -20,3 +20,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Zu Light Mode wechseln
+
+plugins:
+   - panzoom
+   - glightbox

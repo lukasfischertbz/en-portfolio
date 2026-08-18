@@ -8,15 +8,23 @@ importers:
 
   .:
     dependencies:
+      glightbox:
+        specifier: ^3.3.1
+        version: 3.3.1
       mkdocs:
         specifier: ^0.0.1
         version: 0.0.1
 
 packages:
 
+  glightbox@3.3.1:
+    resolution: {integrity: sha512-nXoKfJRnQTDaAFAw5799hjpfAAHx5aLvOLG0SIGudeMCwtHgO3P2/avNYapJ+SL4UEZxO2YNBPtq6pzMhSx42g==}
+
   mkdocs@0.0.1:
     resolution: {integrity: sha512-7AtZyiwELtQQcP2Cdw0H8Q413alLa4Jl0AnDIreqP8+5GJvLFLMoh4gFQ21i6ASdKNlKGPjTHqiVDBg/lQ0dQg==}
 
 snapshots:
+
+  glightbox@3.3.1: {}
 
   mkdocs@0.0.1: {}

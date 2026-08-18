@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"glightbox": "^3.3.1",
 		"mkdocs": "^0.0.1"
 	}
 }
