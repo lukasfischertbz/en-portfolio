@@ -1,0 +1,30 @@
+{
+  "title": "Portfolio",
+  "description": "",
+  "pages": [
+    {
+      "title": "About Me",
+      "url": "/about-me/",
+      "description": "",
+      "priority": "medium"
+    },
+    {
+      "title": "Brainstorm",
+      "url": "/brainstorm/",
+      "description": "",
+      "priority": "medium"
+    },
+    {
+      "title": "Welcome to MkDocs",
+      "url": "/",
+      "description": "",
+      "priority": "high"
+    },
+    {
+      "title": "Summer 2026",
+      "url": "/summer-2026/",
+      "description": "",
+      "priority": "medium"
+    }
+  ]
+}

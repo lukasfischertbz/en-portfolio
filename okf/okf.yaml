@@ -1,0 +1,48 @@
+okf_version: 0.9.4
+bundle:
+  name: portfolio
+  title: Portfolio
+  description: ""
+  url: ""
+  generated_by: "@docmd/plugin-okf"
+  generated_at: "2026-08-25T13:21:26.406Z"
+  default_type: concept
+stats:
+  concepts: 4
+  by_type:
+    concept: 4
+  locales: 
+  versions: 
+concepts:
+  - id: about-me
+    type: concept
+    title: "About Me"
+    path: /about-me/
+    file: concepts/about-me.md
+    locale: ""
+    version: ""
+    tags: 
+  - id: brainstorm
+    type: concept
+    title: Brainstorm
+    path: /brainstorm/
+    file: concepts/brainstorm.md
+    locale: ""
+    version: ""
+    tags: 
+  - id: root
+    type: concept
+    title: "Welcome to MkDocs"
+    path: /
+    file: concepts/root.md
+    locale: ""
+    version: ""
+    tags: 
+  - id: summer-2026
+    type: concept
+    title: "Summer 2026"
+    path: /summer-2026/
+    file: concepts/summer-2026.md
+    locale: ""
+    version: ""
+    tags: 
