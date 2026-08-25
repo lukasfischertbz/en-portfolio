@@ -6,7 +6,7 @@ path: /about-me/
 updated: 2026-08-25
 okf:
   generated_by: "@docmd/plugin-okf"
-  generated_at: "2026-08-25T13:21:26.405Z"
+  generated_at: "2026-08-25T13:33:19.691Z"
 ---
 # About Me
 
