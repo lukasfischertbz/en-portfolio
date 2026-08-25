@@ -1,5 +1,5 @@
 serve:
-	watchexec -e md,yml,avif -r mkdocs serve
+	npx @docmd/core dev
 
 push:
-	mkdocs gh-deploy --force
+	npx @docmd/core build && npx gh-pages -d site -t true

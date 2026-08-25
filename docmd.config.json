@@ -1,0 +1,18 @@
+{
+  "title": "Portfolio",
+  "src": "./docs",
+  "out": "./site",
+  "theme": {
+    "appearance": "system"
+  },
+  "layout": {
+    "optionsMenu": {
+      "components": {
+        "themeSwitch": true
+      }
+    }
+  },
+  "plugins": {
+    "ai": false
+  }
+}
