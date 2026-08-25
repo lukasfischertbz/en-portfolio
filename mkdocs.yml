@@ -2,7 +2,10 @@ site_name: Portfolio
 
 nav:
   - Home: index.md
-  - Summer 2026: summer-2026.md
+  - About me:
+    - About me: about-me.md
+    - Summer 2026: summer-2026.md
+  - Brainstorm: brainstorm.md
 
 theme:
   name: material
@@ -20,6 +23,9 @@ theme:
       toggle:
         icon: material/weather-night
         name: Zu Light Mode wechseln
+
+watch:
+  - docs
 
 plugins:
    - glightbox
