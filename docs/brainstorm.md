@@ -2,6 +2,46 @@
 
 25/08/2026
 
+<!--Situation: 
+
+You are a second-year apprentice who is about to move to another department in your (real) company. Your superior gave you the task to create a booklet for the apprentice who is about to take over your job. Start thinking about the various tasks you do at work, which ones you like, and realistically, which ones could be put in this learning documentation. 
+
+  
+
+Brainstorming and background info: 
+
+    What's the name of your company? 
+       
+
+    What's your current department? 
+       
+
+    What tasks do you carry out on a regular basis? 
+       
+
+    Which of these is a complex task? 
+       
+
+    Why do you like or dislike doing this task? 
+       
+
+    How do you manage this complex task? 
+       
+
+    How can you organise clear and effective explanations of a complex task for your classmate? 
+       
+
+    What are the dos and the don’ts with regard to this task? 
+       
+
+    What issues would you have to deal with if you forgot an essential step of your complex task? 
+       
+
+    What skills do you need to complete these tasks?  
+     
+
+    Start to list below some specific vocabular terms you need to know to do the various tasks at your work: -->
+
 ---
 
 ## Situation: 
