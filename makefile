@@ -1,5 +1,5 @@
 serve:
-	npx @docmd/core dev
+	pnpm exec docmd dev
 
 push:
-	npx @docmd/core build && pnpm exec gh-pages -d site -t true
+	pnpm exec docmd build && pnpm exec gh-pages -d site -t
