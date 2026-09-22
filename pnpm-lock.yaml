@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@docmd/core':
+    hash: ff180a1f320a5193b02ed82655112fa0291d29c24ea2982c4c48718e3d44d309
+    path: patches/@docmd__core.patch
+
 importers:
 
   .:
     devDependencies:
       '@docmd/core':
         specifier: ^0.9.0
-        version: 0.9.4
+        version: 0.9.4(patch_hash=ff180a1f320a5193b02ed82655112fa0291d29c24ea2982c4c48718e3d44d309)
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
@@ -621,7 +626,7 @@ snapshots:
       '@docmd/engine-js': 0.9.4
       '@docmd/engine-rust': 0.9.4
 
-  '@docmd/core@0.9.4':
+  '@docmd/core@0.9.4(patch_hash=ff180a1f320a5193b02ed82655112fa0291d29c24ea2982c4c48718e3d44d309)':
     dependencies:
       '@docmd/api': 0.9.4
       '@docmd/deployer': 0.9.4

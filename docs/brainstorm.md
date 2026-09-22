@@ -101,4 +101,4 @@ You are a second-year apprentice who is about to move to another department in y
 
 - Start to list below some specific vocabular terms you need to know to do the various tasks at your work:
 
-  > Refactor, Sprint Retro,
+  > Refactor, Sprint Retro, Style, Merge Request

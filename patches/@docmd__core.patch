@@ -1,0 +1,21 @@
+diff --git a/dist/utils/dev-utils.js b/dist/utils/dev-utils.js
+index cb9374b1711a114ccfeb180815b2754a957f5db1..bdcb076bcf0f785e7e0845e5b3d6128f2eac1244 100644
+--- a/dist/utils/dev-utils.js
++++ b/dist/utils/dev-utils.js
+@@ -34,6 +34,16 @@ export const MIME_TYPES = {
+     '.woff2': 'font/woff2',
+     '.ttf': 'application/font-ttf',
+     '.txt': 'text/plain',
++    '.pdf': 'application/pdf',
++    '.webp': 'image/webp',
++    '.avif': 'image/avif',
++    '.mp4': 'video/mp4',
++    '.webm': 'video/webm',
++    '.mp3': 'audio/mpeg',
++    '.wav': 'audio/wav',
++    '.ogg': 'audio/ogg',
++    '.xml': 'application/xml',
++    '.webmanifest': 'application/manifest+json',
+ };
+ /**
+  * Format an absolute path for display relative to CWD.
