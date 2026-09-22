@@ -1,4 +1,4 @@
 approveBuilds: true
 
 patchedDependencies:
-  '@docmd/core': patches/@docmd__core.patch
+  "@docmd/core": patches/@docmd__core.patch
