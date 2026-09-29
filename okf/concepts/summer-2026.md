@@ -3,10 +3,10 @@ type: concept
 title: "Summer 2026"
 source: /summer-2026/
 path: /summer-2026/
-updated: 2026-08-25
+updated: 2026-09-29
 okf:
   generated_by: "@docmd/plugin-okf"
-  generated_at: "2026-08-25T13:33:19.693Z"
+  generated_at: "2026-09-29T11:27:39.291Z"
 ---
 # Summer 2026
 

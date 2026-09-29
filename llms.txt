@@ -5,6 +5,7 @@
 ## Documentation Files
 
 - [About Me](/about-me/)
+- [Booklet](/booklet/)
 - [Brainstorm](/brainstorm/)
-- [Welcome to MkDocs](/)
+- [English Portfolio](/)
 - [Summer 2026](/summer-2026/)

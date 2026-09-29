@@ -1,27 +1,13 @@
 ---
 type: concept
-title: "Welcome to MkDocs"
+title: "English Portfolio"
 source: /
 path: /
-updated: 2026-08-25
+updated: 2026-09-29
 okf:
   generated_by: "@docmd/plugin-okf"
-  generated_at: "2026-08-25T13:33:19.693Z"
+  generated_at: "2026-09-29T11:27:39.291Z"
 ---
-# Welcome to MkDocs
+# English Portfolio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is my english portfolio.

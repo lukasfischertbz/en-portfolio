@@ -9,13 +9,19 @@
       "priority": "medium"
     },
     {
+      "title": "Booklet",
+      "url": "/booklet/",
+      "description": "",
+      "priority": "medium"
+    },
+    {
       "title": "Brainstorm",
       "url": "/brainstorm/",
       "description": "",
       "priority": "medium"
     },
     {
-      "title": "Welcome to MkDocs",
+      "title": "English Portfolio",
       "url": "/",
       "description": "",
       "priority": "high"

@@ -3,10 +3,10 @@ type: concept
 title: Brainstorm
 source: /brainstorm/
 path: /brainstorm/
-updated: 2026-08-25
+updated: 2026-09-29
 okf:
   generated_by: "@docmd/plugin-okf"
-  generated_at: "2026-08-25T13:33:19.692Z"
+  generated_at: "2026-09-29T11:27:39.290Z"
 ---
 # Brainstorm
 
@@ -111,4 +111,4 @@ You are a second-year apprentice who is about to move to another department in y
 
 - Start to list below some specific vocabular terms you need to know to do the various tasks at your work:
 
-  > Refactor, Sprint Retro,
+  > Refactor, Sprint Retro, Style, Merge Request

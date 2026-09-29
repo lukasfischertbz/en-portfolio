@@ -1,33 +1,61 @@
 <!--
-  ---------------------------------------------------------------
-  docmd : the zero-config documentation engine.
-  @website https://docmd.io
-  [docmd-source] - Please do not remove this header.
-  ---------------------------------------------------------------
+  ============================================================================
+  @docmd/template-summer  —  layout.ejs
+
+  A complete, modern documentation layout. Built to feel like its
+  own product — not a recolor of the default template. The page is structured
+  as five vertically-stacked, sticky-aware bands:
+
+    1.  Top bar          — logo, centered search, AI "Ask" button, action menu
+    2.  Sub navigation   — section tabs (Documentation, Guides, …) + extras
+    3.  Page header      — sticky breadcrumb + title + copy widgets
+    4.  Layout grid      — sidebar | main content | right-rail TOC
+    5.  Footer           — branding + links
+
+  All CSS lives in assets/css/summer.css and is fully self-contained —
+  docmd-main.css is intentionally NOT loaded.
+
+  Note: menubar, footer and TOC partials are INLINED here (not `include`d)
+  because the docmd core resolves `include()` paths relative to the
+  default layout's directory, not the resolved template's. Inlining
+  guarantees the summer-styled partials always render.
+  ============================================================================
 -->
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="generator" content="docmd v0.9.4">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script>
-      var root = "./";
-      if (root && !root.endsWith('/')) root += '/';
-      if (root === '') root = './';
-      window.DOCMD_ROOT = root;
+<html lang="en"
+  >
+<head>
+  <meta charset="UTF-8">
+  <meta name="generator" content="docmd template-summer v0.8.7">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#13110d" media="(prefers-color-scheme: dark)">
+  <title>English Portfolio - Portfolio</title>
 
-      window.DOCMD_SITE_ROOT = "/";
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-      window.DOCMD_APPEARANCE = "system";
-      window.DOCMD_VERSION_ROOT = "/";
-      window.DOCMD_BASE = "/";
-      window.DOCMD_LOCALE = "";
-      window.DOCMD_DEFAULT_LOCALE = "";
-    </script>
-    <script>/**
+  
+
+  
+
+  <script>
+    window.DOCMD_TEMPLATE = 'summer';
+    window.DOCMD_ROOT = "./" || './';
+    window.DOCMD_SITE_ROOT = "/";
+    window.DOCMD_APPEARANCE = "system";
+    window.DOCMD_VERSION_ROOT = "/";
+    window.DOCMD_BASE = "/";
+    window.DOCMD_LOCALE = "";
+    window.DOCMD_DEFAULT_LOCALE = "";
+    const _localePagesEl = document.getElementById('docmd-locale-pages');
+    if (_localePagesEl) {
+      window.DOCMD_LOCALE_PAGES = JSON.parse(_localePagesEl.textContent);
+    }
+  </script>
+
+  <script>/**
  * --------------------------------------------------------------------
  * docmd : the zero-config documentation engine.
  *
@@ -93,86 +121,131 @@
     console.error('Theme init failed', e);
   }
 })();</script>
-    <style>
-      html {
-        visibility: hidden;
-      }
-    </style>
-    <title>
-      Welcome to MkDocs : Portfolio
-    </title>
-    
-    
 
-    <link id="site-favicon" rel="icon" href="./assets/favicon.ico?v=mt8pgqx0">
-    <link rel="stylesheet" href="./assets/css/docmd-main.css?v=mt8pgqx0">
-    
-    <link rel="stylesheet" href="./assets/css/docmd-highlight-light.css?v=mt8pgqx0" id="hljs-light" >
-    <link rel="stylesheet" href="./assets/css/docmd-highlight-dark.css?v=mt8pgqx0" id="hljs-dark" disabled>
-    
-    
+  
+
+  <link id="site-favicon" rel="icon" href="./assets/favicon.ico?v=mumldy8k">
+
+  
+  
+  <link rel="stylesheet" href="./assets/css/docmd-highlight-light.css?v=mumldy8k" id="hljs-light" >
+  <link rel="stylesheet" href="./assets/css/docmd-highlight-dark.css?v=mumldy8k" id="hljs-dark" disabled">
+  
+
+  
 <meta name="description" content="">
-<meta property="og:title" content="Welcome to MkDocs - Portfolio">
+<meta property="og:title" content="English Portfolio - Portfolio">
 <meta property="og:description" content="">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Welcome to MkDocs - Portfolio">
+<meta name="twitter:title" content="English Portfolio - Portfolio">
 <meta name="twitter:description" content="">
 
 
 
-<link rel="stylesheet" href="./assets/css/docmd-git.css?v=mt8pgqx0" >
-<link rel="stylesheet" href="./assets/css/docmd-openapi.css?v=mt8pgqx0" >
+<link rel="stylesheet" href="./assets/css/docmd-git.css?v=mumldy8k" >
+<link rel="stylesheet" href="./assets/css/docmd-openapi.css?v=mumldy8k" >
+<link rel="stylesheet" href="./assets/template/summer.css?v=mumldy8k" >
 
-    
-    
-  </head>
-  <body
-    class="sidebar-collapsible"
-    data-default-collapsed="false"
-    data-copy-code-enabled="true" data-spa-enabled="true" data-source-file="docs/index.md">
+  
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+</head>
+<body class="summer-template"
+  
+  data-spa-enabled="true"
+  data-copy-code-enabled="true"
+  data-default-collapsed="false" data-source-file="docs/index.md">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    
-    
+  
+  
 
-    
-    
-      <aside class="sidebar">
-        <div class="sidebar-header">
-          
-<h1><a href="./">
-                Portfolio
-              </a></h1>
-          
-          <span class="mobile-view sidebar-menu-button float-right">
-            
-<svg class="lucide-icon icon-menu " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-menu"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M4 5h16" />
-  <path d="M4 12h16" />
-  <path d="M4 19h16" />
-</svg>
+  
 
-          </span>
+  
+  
+
+  
+  <header class="summer-topbar" role="banner">
+    <div class="summer-topbar__inner">
+      
+      <div class="summer-topbar__left">
+        <button class="summer-iconbtn summer-topbar__mobile sidebar-menu-button" type="button" data-summer-sidebar-toggle aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        
+          <a href="./" class="summer-logo summer-logo--text">
+            <span class="summer-logo__icon">P</span>
+            <span>Portfolio</span>
+          </a>
+        
+      </div>
+
+      <div class="summer-topbar__center">
+        <div class="summer-search-container">
+          <svg class="summer-search__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" class="summer-search-input" placeholder="Search (⌘K)" aria-label="Search documentation" autocomplete="off" spellcheck="false">
+          <div class="summer-search-dropdown" style="display: none;">
+            <div class="summer-search-results-wrapper"></div>
+            <div class="summer-search-dropdown-footer">
+              <span><kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+              <span><kbd>ESC</kbd> to close</span>
+            </div>
+          </div>
         </div>
-        <div class="sidebar-top-group">
+      </div>
+
+      
+      <div class="summer-topbar__right">
+        <button class="summer-iconbtn summer-topbar__search-toggle" type="button" data-summer-search-toggle aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        
+        
+          <button class="summer-iconbtn theme-toggle-button" type="button" data-summer-theme-toggle aria-label="Toggle theme" title="Toggle theme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+          </button>
+        
+
+        
+
+        
+
+        
+        
+        
+        
+
+        
+
+        
+
+        
+      </div>
+    </div>
+  </header>
+
+  
+  
+
+  
+  <div class="summer-layout">
+
+    
+    
+      <aside class="summer-sidebar" aria-label="Documentation navigation">
+        <button class="summer-sidebar-close summer-iconbtn" type="button" data-summer-sidebar-close aria-label="Close navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <div class="summer-sidebar__top">
           
           
           
           
         </div>
+
         
 
 <nav class="sidebar-nav" aria-label="Main Navigation">
@@ -184,7 +257,7 @@
           >
           
           <span class="nav-item-title">
-            Home
+            English Portfolio
             </span>
           
           
@@ -194,48 +267,15 @@
         
       </li>
     
-      <li class="collapsible nav-group"  aria-expanded="false" >
+      <li class="" >
       
-        <a href="./about-me/" class=" nav-group"
+        <a href="./about-me/" class=" "
           >
           
           <span class="nav-item-title">
             About Me
             </span>
           
-            <span class="collapse-icon-wrapper">
-<svg class="lucide-icon icon-chevron-right collapse-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-chevron-right"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m9 18 6-6-6-6" />
-</svg>
-</span>
-          
-          
-        </a>
-        
-
-        
-          <ul class="submenu">
-            
-      <li class="" >
-      
-        <a href="./summer-2026/" class=" "
-          >
-          
-          <span class="nav-item-title">
-            Summer 2026
-            </span>
-          
           
         </a>
         
@@ -243,7 +283,19 @@
         
       </li>
     
-          </ul>
+      <li class="" >
+      
+        <a href="./booklet/" class=" "
+          >
+          
+          <span class="nav-item-title">
+            Booklet
+            </span>
+          
+          
+        </a>
+        
+
         
       </li>
     
@@ -263,359 +315,192 @@
         
       </li>
     
+      <li class="" >
+      
+        <a href="./summer-2026/" class=" "
+          >
+          
+          <span class="nav-item-title">
+            Summer 2026
+            </span>
+          
+          
+        </a>
+        
+
+        
+      </li>
+    
   </ul>
 </nav>
-        <div class="sidebar-bottom-group mt-auto">
+
+        <div class="summer-sidebar__bottom">
+          
           
           
           
           
         </div>
       </aside>
+    
+
+    
+    <main class="summer-main" id="main-content">
       
-      <div class="main-content-wrapper">
-        
-        
-        
-          <header class="page-header">
-            <div class="header-left">
+        <div class="summer-pageheader">
+          <div class="summer-pageheader__inner">
+            
+            <div class="summer-pageheader__meta">
               
-                <button id="sidebar-toggle-button" class="sidebar-toggle-button"
-                  aria-label="Toggle Sidebar">
-                  
-<svg class="lucide-icon icon-chevron-left " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-chevron-left"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m15 18-6-6 6-6" />
-</svg>
-
-                </button>
-              
-              <div class="header-titles-wrapper">
-                <span class="header-title">
-                  Welcome to MkDocs
-                </span>
-              </div>
-            </div>
-            <div class="header-right">
-              
-                
-
-
-<div class="docmd-options-menu">
-    
-    <button class="docmd-search-trigger" aria-label="Search">
-        
-<svg class="lucide-icon icon-search " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-search"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m21 21-4.34-4.34" />
-  <circle cx="11" cy="11" r="8" />
-</svg>
-
-        <span class="search-label">Search</span>
-        <span class="search-keys"><kbd class="docmd-kbd">⌘</kbd><kbd class="docmd-kbd">K</kbd></span>
-    </button>
-    
-
-    
-
-    
-
-    
-    <button class="theme-toggle-button" aria-label="Toggle theme">
-        
-<svg class="lucide-icon icon-sun icon-sun" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-sun"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <circle cx="12" cy="12" r="4" />
-  <path d="M12 2v2" />
-  <path d="M12 20v2" />
-  <path d="m4.93 4.93 1.41 1.41" />
-  <path d="m17.66 17.66 1.41 1.41" />
-  <path d="M2 12h2" />
-  <path d="M20 12h2" />
-  <path d="m6.34 17.66-1.41 1.41" />
-  <path d="m19.07 4.93-1.41 1.41" />
-</svg>
- 
-<svg class="lucide-icon icon-moon icon-moon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-moon"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" />
-</svg>
-
-    </button>
-    
-
-    
-</div>
-
-              
-            </div>
-          </header>
-        
-        <div class="content-theme-cover">
-          <main class="content-area" id="main-content">
-            <div class="content-layout">
-              <div class="main-content">
-                <div class="docmd-breadcrumbs-row">
-                  <div id="docmd-raw-markdown" data-content="%23%20Welcome%20to%20MkDocs%0A%0AFor%20full%20documentation%20visit%20%5Bmkdocs.org%5D(https%3A%2F%2Fwww.mkdocs.org).%0A%0A%23%23%20Commands%0A%0A*%20%60mkdocs%20new%20%5Bdir-name%5D%60%20-%20Create%20a%20new%20project.%0A*%20%60mkdocs%20serve%60%20-%20Start%20the%20live-reloading%20docs%20server.%0A*%20%60mkdocs%20build%60%20-%20Build%20the%20documentation%20site.%0A*%20%60mkdocs%20-h%60%20-%20Print%20help%20message%20and%20exit.%0A%0A%23%23%20Project%20layout%0A%0A%20%20%20%20mkdocs.yml%20%20%20%20%23%20The%20configuration%20file.%0A%20%20%20%20docs%2F%0A%20%20%20%20%20%20%20%20index.md%20%20%23%20The%20documentation%20homepage.%0A%20%20%20%20%20%20%20%20...%20%20%20%20%20%20%20%23%20Other%20markdown%20pages%2C%20images%20and%20other%20files.%0A" style="display: none;"></div>
-                  
-                    <nav aria-label="breadcrumb" class="docmd-breadcrumbs">
-                      <ol>
-                        
-                        
-                          <li class="breadcrumb-item active" aria-current=&quot;page&quot;>
-                            
-                              <span>Home</span>
-                            
-                            
-                          </li>
-                        
-                      </ol>
-                    </nav>
-                  
-
-                  
-                    <div class="docmd-copy-widgets">
-                      
-                        <button class="docmd-copy-btn docmd-copy-raw-btn" data-copied="Copied!" title="Copy Markdown" aria-label="Copy Markdown">
-                          <span class="docmd-btn-icon">
-<svg class="lucide-icon icon-copy " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-copy"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
-  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
-</svg>
-</span>
-                        </button>
-                      
-                      
-                        <button class="docmd-copy-btn docmd-copy-context-btn" data-copied="Copied!" title="Copy Context">
-                          <span class="docmd-btn-icon">
-<svg class="lucide-icon icon-message-square " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-message-square"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
-</svg>
-</span>
-                          <span class="docmd-btn-text">Copy Context</span>
-                        </button>
-                      
-                    </div>
-                  
-                </div>
-                
-                <h1 id="welcome-to-mkdocs" class="docmd-heading"><a href="#welcome-to-mkdocs" class="heading-anchor" aria-label="Permalink to this section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2-icon lucide-link-2"><path d="M9 17H7A5 5 0 0 1 7 7h2m6 0h2a5 5 0 1 1 0 10h-2m-7-5h8"/></svg></a>Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="welcome-to-mkdocs-commands" class="docmd-heading"><a href="#welcome-to-mkdocs-commands" class="heading-anchor" aria-label="Permalink to this section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2-icon lucide-link-2"><path d="M9 17H7A5 5 0 0 1 7 7h2m6 0h2a5 5 0 1 1 0 10h-2m-7-5h8"/></svg></a>Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="welcome-to-mkdocs-project-layout" class="docmd-heading"><a href="#welcome-to-mkdocs-project-layout" class="heading-anchor" aria-label="Permalink to this section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2-icon lucide-link-2"><path d="M9 17H7A5 5 0 0 1 7 7h2m6 0h2a5 5 0 1 1 0 10h-2m-7-5h8"/></svg></a>Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-
-                
-                  <div class="page-navigation">
-                    
-                      <div class="prev-page-placeholder">
-                      </div>
+                <nav aria-label="breadcrumb" class="summer-breadcrumbs">
+                  <ol class="summer-breadcrumbs__list">
                     
                     
-                      <a href="./about-me/" class="next-page">
-                        <span><small>Next</small>
-                          <strong>
-                            About Me
-                          </strong></span>
+                      <li class="summer-breadcrumbs__item is-current" aria-current=&quot;page&quot;>
                         
-<svg class="lucide-icon icon-arrow-right page-nav-icon" width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-arrow-right"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M5 12h14" />
-  <path d="m12 5 7 7-7 7" />
-</svg>
-
-                      </a>
+                          <span class="summer-breadcrumbs__current">English Portfolio</span>
+                        
+                      </li>
                     
-                  </div>
-                
-              </div>
-              
-              <div class="toc-sidebar">
-                
-
-
-  <div class="toc-container">
-    <h2 class="toc-title">On This Page<span class="mobile-view toc-menu-button float-right">
-<svg class="lucide-icon icon-chevron-down " width="1em" height="1em" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-  class="lucide lucide-chevron-down"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="m6 9 6 6 6-6" />
-</svg>
-</span></h2>
-    <ul class="toc-list">
-      
-        <li class="toc-item toc-level-1">
-          <a href="#welcome-to-mkdocs" class="toc-link">Welcome to MkDocs</a>
-        </li>
-      
-        <li class="toc-item toc-level-2">
-          <a href="#welcome-to-mkdocs-commands" class="toc-link">Commands</a>
-        </li>
-      
-        <li class="toc-item toc-level-2">
-          <a href="#welcome-to-mkdocs-project-layout" class="toc-link">Project layout</a>
-        </li>
-      
-    </ul>
-  </div>
-
-              </div>
+                  </ol>
+                </nav>
               
             </div>
-            <div class="page-footer-actions">
+
+            <div class="summer-copy-widgets">
               
               
-                <span class="git-last-updated" data-timestamp="1787057774000">
-                  <svg class="git-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                  <span class="git-label">Last updated:</span>
-                  <span class="git-time" data-timestamp="1787057774000"></span>
-                  
-                  <div class="git-commit-tooltip" role="tooltip">
-                    <div class="git-tooltip-title">Recent commits</div>
-                    <ul class="git-commit-list">
-                      
-                        <li class="git-commit-item">
-                          <div class="git-commit-avatar" title="Lukas Fischer">
-                            
-                              <img src="https://www.gravatar.com/avatar/02de2c22096a9b7e773d96a8e7f9caf8?d=mp&amp;s=64" alt="Lukas Fischer">
-                            
-                          </div>
-                          <div class="git-commit-details">
-                            <div class="git-commit-message" title="Update portfolio">Update portfolio</div>
-                            <div class="git-commit-meta">
-                              <span class="git-commit-author">Lukas Fischer</span>
-                              <span class="git-commit-date" data-timestamp="1787057774000"></span>
-                            </div>
-                          </div>
-                        </li>
-                      
-                    </ul>
-                  </div>
-                  
-                </span>
               
-              <span class="git-spacer"></span>
               
             </div>
-          </main>
-          
-
-
-<footer class="page-footer">
-  <div class="footer-content">
-    <div class="user-footer">© 2026</div>
-    
-      <div class="branding-footer">
-        Built with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg> <a href="https://docmd.io" target="_blank" rel="noopener">docmd.</a>
-      </div>
-    
-  </div>
-</footer>
-
+          </div>
         </div>
+      
+
+      
+        <h1 class="summer-content__title docmd-focus-title">English Portfolio</h1>
+      
+
+      <div id="docmd-raw-markdown" data-content="%23%20English%20Portfolio%0A%0AThis%20is%20my%20english%20portfolio.%0A" style="display: none;"></div>
+
+      <article class="summer-content">
+        <h1 id="english-portfolio" class="docmd-heading"><a href="#english-portfolio" class="heading-anchor" aria-label="Permalink to this section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2-icon lucide-link-2"><path d="M9 17H7A5 5 0 0 1 7 7h2m6 0h2a5 5 0 1 1 0 10h-2m-7-5h8"/></svg></a>English Portfolio</h1>
+<p>This is my english portfolio.</p>
+
+      </article>
+
+      
+        <nav class="summer-pagenav no-prev" aria-label="Page navigation">
+          
+          
+            <a href="./about-me/" class="summer-pagenav__link summer-pagenav__link--next">
+              <span class="summer-pagenav__label">
+                <span class="summer-pagenav__small">Next</span>
+                <span class="summer-pagenav__title">About Me</span>
+              </span>
+              <svg class="summer-pagenav__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          
+        </nav>
+      
+
+      
+        <div class="summer-pagefooter">
+          
+            <span></span>
+          
+          
+            <span class="summer-pagefooter__time has-commits" data-timestamp="1790083336000" tabindex="0" aria-haspopup="true" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Last updated: <time datetime="2026-09-22T13:22:16.000Z">22.9.2026</time></span>
+              
+                <div class="summer-git-popover" role="tooltip">
+                  <div class="summer-git-popover__title">Recent commits</div>
+                  <ul class="summer-git-popover__list">
+                    
+                      <li class="summer-git-popover__item">
+                        <div class="summer-git-popover__avatar" title="Lukas Fischer">
+                          
+                            <img src="https://www.gravatar.com/avatar/02de2c22096a9b7e773d96a8e7f9caf8?d=mp&amp;s=64" alt="Lukas Fischer" loading="lazy">
+                          
+                        </div>
+                        <div class="summer-git-popover__details">
+                          <div class="summer-git-popover__msg" title="misc">misc</div>
+                          <div class="summer-git-popover__meta">
+                            <span class="summer-git-popover__author">Lukas Fischer</span>
+                            <span class="summer-git-popover__date" data-timestamp="1790083336000"></span>
+                          </div>
+                        </div>
+                      </li>
+                    
+                      <li class="summer-git-popover__item">
+                        <div class="summer-git-popover__avatar" title="Lukas Fischer">
+                          
+                            <img src="https://www.gravatar.com/avatar/02de2c22096a9b7e773d96a8e7f9caf8?d=mp&amp;s=64" alt="Lukas Fischer" loading="lazy">
+                          
+                        </div>
+                        <div class="summer-git-popover__details">
+                          <div class="summer-git-popover__msg" title="Update portfolio">Update portfolio</div>
+                          <div class="summer-git-popover__meta">
+                            <span class="summer-git-popover__author">Lukas Fischer</span>
+                            <span class="summer-git-popover__date" data-timestamp="1787057774000"></span>
+                          </div>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+            </span>
+          
+        </div>
+      
+    </main>
+
+    
+    
+      
+    
+    
+      <div class="summer-toc" aria-label="On this page">
+        
+        
+        
       </div>
-      
-      <script src="./assets/js/docmd-main.js?v=mt8pgqx0"></script>
-      
-      <script src="./assets/js/docmd-git.js?v=mt8pgqx0"></script>
-      <script src="./assets/js/docmd-image-lightbox.js?v=mt8pgqx0" ></script>
-<script src="./assets/js/vendor/minisearch.js?v=mt8pgqx0" ></script>
-<script src="./assets/js/docmd-search.js?v=mt8pgqx0" ></script>
-<script src="./assets/js/docmd-git.js?v=mt8pgqx0" ></script>
+    
+    
+  </div>
+
+  <button class="summer-totop" type="button" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  
+  
+  
+    <footer class="summer-footer">
+      <div class="summer-footer__inner">
+        <div class="summer-footer__user">© 2026</div>
+        
+          <div class="summer-footer__branding">
+            <span>Built with</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+            <a href="https://docmd.io" target="_blank" rel="noopener">docmd</a>
+            
+          </div>
+        
+      </div>
+    </footer>
+  
+
+  
+  <script src="./assets/js/docmd-main.js?v=mumldy8k"></script>
+
+  <script src="./assets/js/docmd-image-lightbox.js?v=mumldy8k" ></script>
+<script src="./assets/js/vendor/minisearch.js?v=mumldy8k" ></script>
+<script src="./assets/js/docmd-search.js?v=mumldy8k" ></script>
+<script src="./assets/js/docmd-git.js?v=mumldy8k" ></script>
+<script src="./assets/template/summer.js?v=mumldy8k" ></script>
 
   <!-- Search Modal (Injected by @docmd/plugin-search) -->
   <div id="docmd-search-modal" class="docmd-search-modal" style="display: none;" data-show-confidence="false" data-show-filters="true"
@@ -691,8 +576,6 @@ docs/
     </script>
 
 <script>window.__git_config={"repo":null,"branch":"main","editLink":false,"lastUpdated":true,"commitHistory":true,"maxCommits":5,"dateFormat":"relative"};window.__git_i18n={"lastUpdated":"Last updated","recentCommits":"Recent commits","viewCommitHistory":"View commit history","editOnGitHub":"Edit on GitHub","editOnGitLab":"Edit on GitLab","editOnBitbucket":"Edit on Bitbucket","editThisPage":"Edit this page","justNow":"just now","minutesAgo":"{n}m ago","hoursAgo":"{n}h ago","daysAgo":"{n}d ago"}</script>
-      
-      
-      
-  </body>
+  
+</body>
 </html>

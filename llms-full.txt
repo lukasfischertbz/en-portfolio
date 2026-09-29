@@ -9,17 +9,17 @@
 # About Me
 
 <!--
-Portfolio Entry #1: Website's "About Me" section + Summer Updates 
+Portfolio Entry #1: Website's "About Me" section + Summer Updates
 
-    Create an "About Me" section in your portfolio with some facts about you, such as your company, title, hobbies, etc. 
+    Create an "About Me" section in your portfolio with some facts about you, such as your company, title, hobbies, etc.
 
     Post one of the photos you discussed in class, and talk about your highlights a little more in general.  -->
 
-Portfolio Entry #1: Website's "About Me" section + Summer Updates 
+Portfolio Entry #1: Website's "About Me" section + Summer Updates.
 
 ### Who am I
 
-I am a appretice at Rafisa Informatik learning app development
+I am a appretice at Rafisa Informatik learning app development.
 
 ### What am I doing currently
 
@@ -28,7 +28,26 @@ Im also working on a Java api for the internal database as lead dev.
 
 ### What are my hobbies
 
-I like to skate and play pool
+I like to skate and play pool.
+
+
+---
+
+## [Booklet](/booklet/)
+
+# Booklet
+
+Here is my Booklet and the vocabulary list.
+
+## Booklet
+
+<iframe src="../assets/Booklet_Lukas_Fischer.pdf" width="100%" height="800" title="Booklet PDF"></iframe>
+
+---
+
+## Vocabulary List
+
+<iframe src="../assets/Booklet_VOCAB_Lukas_Fischer.pdf" width="100%" height="800" title="Vocabulary List PDF"></iframe>
 
 
 ---
@@ -138,30 +157,16 @@ You are a second-year apprentice who is about to move to another department in y
 
 - Start to list below some specific vocabular terms you need to know to do the various tasks at your work:
 
-  > Refactor, Sprint Retro,
+  > Refactor, Sprint Retro, Style, Merge Request
 
 
 ---
 
-## [Welcome to MkDocs](/)
+## [English Portfolio](/)
 
-# Welcome to MkDocs
+# English Portfolio
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is my english portfolio.
 
 
 ---
