@@ -1,3 +1,5 @@
+.PHONY: docs push
+
 docs:
 	pnpm exec docmd dev
 
