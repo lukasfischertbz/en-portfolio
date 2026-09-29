@@ -1,7 +1,13 @@
 # Booklet
 
-Here is a Booklet and a vocabulary list.
+Here is my Booklet and the vocabulary list.
 
-<iframe src="../assets/Booklet_Lukas_Fischer.pdf" width="100%" height="800"></iframe>
+## Booklet
 
-<iframe src="../assets/Booklet_VOCAB_Lukas_Fischer.pdf" width="100%" height="800"></iframe>
+<iframe src="../assets/Booklet_Lukas_Fischer.pdf" width="100%" height="800" title="Booklet PDF"></iframe>
+
+---
+
+## Vocabulary List
+
+<iframe src="../assets/Booklet_VOCAB_Lukas_Fischer.pdf" width="100%" height="800" title="Vocabulary List PDF"></iframe>

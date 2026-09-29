@@ -3,13 +3,19 @@
   "src": "./docs",
   "out": "./site",
   "theme": {
-    "appearance": "system"
+    "appearance": "system",
+    "template": "summer"
   },
   "layout": {
     "optionsMenu": {
       "components": {
         "themeSwitch": true
       }
+    },
+    "copyWidgets": {
+      "enabled": false,
+      "raw": false,
+      "context": false
     }
   },
   "plugins": {

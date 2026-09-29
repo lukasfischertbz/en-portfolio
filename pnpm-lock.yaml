@@ -11,6 +11,10 @@ patchedDependencies:
 
 importers:
   .:
+    dependencies:
+      "@docmd/template-summer":
+        specifier: 0.9.7
+        version: 0.9.7
     devDependencies:
       "@docmd/core":
         specifier: ^0.9.0
@@ -168,6 +172,13 @@ packages:
     resolution:
       {
         integrity: sha512-LVhSY72EozjJ/WUXqHgY4AtrfZ0UGBK2VrjgZKvj+qbTLEGGbO3d5/c8IGyv/faS8991wuJWNfwU+bvkXQFlcQ==,
+      }
+    engines: { node: ">=20.0.0" }
+
+  "@docmd/template-summer@0.9.7":
+    resolution:
+      {
+        integrity: sha512-YNX2L/uHfvjmIW5bBz19QWY6NmrFiuMoud/jspFn9Df0Kvt9w2IHGHRujA46UJfUBTbq1p4LD+HGwVEYJ+LJBA==,
       }
     engines: { node: ">=20.0.0" }
 
@@ -1139,6 +1150,8 @@ snapshots:
       "@docmd/utils": 0.9.4
 
   "@docmd/plugin-sitemap@0.9.4": {}
+
+  "@docmd/template-summer@0.9.7": {}
 
   "@docmd/themes@0.9.4": {}
 

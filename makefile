@@ -1,4 +1,4 @@
-serve:
+docs:
 	pnpm exec docmd dev
 
 push:
